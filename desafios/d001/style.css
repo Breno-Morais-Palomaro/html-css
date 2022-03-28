@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+p {
+    padding-bottom: 2px;
+}
+
+p#dois {
+    padding-top: 10px;
+}
