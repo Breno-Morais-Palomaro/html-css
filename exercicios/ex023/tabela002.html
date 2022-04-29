@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
+        table {
+            width: 500px;
+            height: 150px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: #383838;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /* odd = impar___ even = par */
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .num {
+            text-align: right;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <hr>
+
+    <table>
+
+        <caption>População das Unidades Federais</caption>:
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!-- Usado para titulos -->
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.169.350</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.777.672</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.497.295</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.150.143</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.228.091</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.112.062</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.297.861</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.867.448</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.101.180</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.861.924</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6.734.568</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6.551.322</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.950.359</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.894.899</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.893.763</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.419.550</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.327.551</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.236.578</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.198.185</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.867.869</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do SUL</td>
+                <td class="num">2.630.098</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.227.294</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.755.015</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.502.759</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">795.145</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">756.500</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">500.826</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitandes</th>
+                <td class="num"><strong>203.305.298</strong></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem ex minima, minus ratione illum iure, natus assumenda accusamus sint incidunt ab fugit suscipit culpa distinctio quam, provident perspiciatis porro ipsum!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam atque in at quos, rerum debitis odio minima veritatis architecto ab ipsum ipsa. Hic repudiandae doloremque dignissimos provident corporis, necessitatibus libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur eligendi pariatur quas sunt perspiciatis maxime? Voluptatem doloremque neque reiciendis dolores repudiandae, sapiente quasi suscipit animi facilis nemo at praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde est nulla quod, accusamus vero iure itaque quibusdam? Dolor voluptatum totam pariatur vitae laudantium voluptate aliquam ex voluptates voluptatibus sit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem ex minima, minus ratione illum iure, natus assumenda accusamus sint incidunt ab fugit suscipit culpa distinctio quam, provident perspiciatis porro ipsum!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam atque in at quos, rerum debitis odio minima veritatis architecto ab ipsum ipsa. Hic repudiandae doloremque dignissimos provident corporis, necessitatibus libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur eligendi pariatur quas sunt perspiciatis maxime? Voluptatem doloremque neque reiciendis dolores repudiandae, sapiente quasi suscipit animi facilis nemo at praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde est nulla quod, accusamus vero iure itaque quibusdam? Dolor voluptatum totam pariatur vitae laudantium voluptate aliquam ex voluptates voluptatibus sit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem ex minima, minus ratione illum iure, natus assumenda accusamus sint incidunt ab fugit suscipit culpa distinctio quam, provident perspiciatis porro ipsum!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam atque in at quos, rerum debitis odio minima veritatis architecto ab ipsum ipsa. Hic repudiandae doloremque dignissimos provident corporis, necessitatibus libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur eligendi pariatur quas sunt perspiciatis maxime? Voluptatem doloremque neque reiciendis dolores repudiandae, sapiente quasi suscipit animi facilis nemo at praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde est nulla quod, accusamus vero iure itaque quibusdam? Dolor voluptatum totam pariatur vitae laudantium voluptate aliquam ex voluptates voluptatibus sit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem ex minima, minus ratione illum iure, natus assumenda accusamus sint incidunt ab fugit suscipit culpa distinctio quam, provident perspiciatis porro ipsum!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam atque in at quos, rerum debitis odio minima veritatis architecto ab ipsum ipsa. Hic repudiandae doloremque dignissimos provident corporis, necessitatibus libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur eligendi pariatur quas sunt perspiciatis maxime? Voluptatem doloremque neque reiciendis dolores repudiandae, sapiente quasi suscipit animi facilis nemo at praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde est nulla quod, accusamus vero iure itaque quibusdam? Dolor voluptatum totam pariatur vitae laudantium voluptate aliquam ex voluptates voluptatibus sit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem ex minima, minus ratione illum iure, natus assumenda accusamus sint incidunt ab fugit suscipit culpa distinctio quam, provident perspiciatis porro ipsum!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam atque in at quos, rerum debitis odio minima veritatis architecto ab ipsum ipsa. Hic repudiandae doloremque dignissimos provident corporis, necessitatibus libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur eligendi pariatur quas sunt perspiciatis maxime? Voluptatem doloremque neque reiciendis dolores repudiandae, sapiente quasi suscipit animi facilis nemo at praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi unde est nulla quod, accusamus vero iure itaque quibusdam? Dolor voluptatum totam pariatur vitae laudantium voluptate aliquam ex voluptates voluptatibus sit.</p>
+</body>
+</html>
