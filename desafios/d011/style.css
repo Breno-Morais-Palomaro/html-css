@@ -1,12 +1,19 @@
 @charset "UTF-8";
 
-body {
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#papel {
     background: black url(imagens/espaco.jpg) center center no-repeat fixed;
     background-size: cover;
+    height: 100vh;
+    
+}
 
-    position: relative;
-    height: 93hv;
-    padding: 10px;
-
-
+#astro {
+    background: transparent url(imagens/astronauta.png) center center no-repeat fixed;
+    background-size: 50vh;
+    height: 100vh;
 }
