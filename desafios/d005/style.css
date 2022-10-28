@@ -1,2 +1,10 @@
 @charset "UTF-8";
 
+
+#minha-foto img {
+    top: 50%;
+    left: 50%;
+    
+
+    border-radius: 100%;
+}
