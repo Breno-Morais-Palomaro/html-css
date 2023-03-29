@@ -13,13 +13,18 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-
-    <form action="cadastro.php" method="post" autocomplete="off"> <!-- get dados não censiveis (nome, peso, altura etc...) post dados cenciveis como senhas numero de cartão -->
-        <p><label for="inome">Nome:</label>
-             <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome:</label>
-             <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--Action junto com submit / method esconde do url os dados colocados, get comporta apenas 3.000 bytes / autocomplete é sobre o autocompletar-->
+        <p>
+            <label for="inome">Nome:</label> <!--Label area maior de sensibilidade/ Clica no Nome e escreva na caixa/ Relção entre o id e o paragrafo-->
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
     </form>
 </body>
 </html>
